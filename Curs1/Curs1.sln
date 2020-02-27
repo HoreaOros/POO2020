@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Curs1", "Curs1.csproj", "{86CFC629-6EDA-4149-93C7-A9BD1EA1FF0E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bars", "..\Bars\Bars.csproj", "{AB598E0D-7870-4094-9628-412340EE558B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{86CFC629-6EDA-4149-93C7-A9BD1EA1FF0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86CFC629-6EDA-4149-93C7-A9BD1EA1FF0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86CFC629-6EDA-4149-93C7-A9BD1EA1FF0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86CFC629-6EDA-4149-93C7-A9BD1EA1FF0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB598E0D-7870-4094-9628-412340EE558B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB598E0D-7870-4094-9628-412340EE558B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB598E0D-7870-4094-9628-412340EE558B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB598E0D-7870-4094-9628-412340EE558B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FE0B8AAF-D44C-4281-9481-B7455F20193E}
+	EndGlobalSection
+EndGlobal
