@@ -45,6 +45,8 @@ namespace Lab1
 
             p1.MoveTo(10, 20);
             p2.MoveBy(4, 5);
+
+            
         }
     }
 }
