@@ -43,6 +43,5 @@ namespace ConsoleApp1
                 st2.Push(rnd.Next(100));
             }
         }
-
     }
 }
