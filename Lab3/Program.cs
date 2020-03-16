@@ -14,7 +14,7 @@ namespace ConsoleApp1
             {
                 return capacity;
             }
-        }
+        }   
 
         public int Peek
         {
