@@ -11,7 +11,7 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             Stiva st = new Stiva();
-
+            
 
             try
             {
