@@ -63,7 +63,7 @@ namespace Curs5
 
             for (int i = 0; i < frecventa.Length; i++)
             {
-                if (frecventa[i] >0)
+                if (frecventa[i] > 0)
                 {
                     Console.WriteLine($"{(char)('a' + i)} - {frecventa[i]}");
                 }
