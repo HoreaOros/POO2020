@@ -62,6 +62,11 @@ namespace Lab5
             }
         }
 
+        /// <summary>
+        /// Depunem o suma in cont
+        /// </summary>
+        /// <param name="suma">suma depusa</param>
+        /// <exception cref="InvalidAmountException"></exception>
         public void Depune(decimal suma)
         {
             Tranzactie tran = new Tranzactie(suma, TranType.Depune, id, Status.Nedefinit);

@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Lab5.ContBancar">
+    <Position X="2" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAMBAAAAAAAAAAQAAAAAAEEAEAEAgA=</HashCode>
+      <FileName>ContBancar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lab5.Program">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lab5.Tranzactie">
+    <Position X="8" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAEAAAAIAAEAAAAAAAAAAAAAAAAAAAQAAAAAgI=</HashCode>
+      <FileName>Tranzactie.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lab5.InvalidAmountException">
+    <Position X="5.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>InvalidAmountException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lab5.NotEnoughFundsException">
+    <Position X="5.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>NotEnoughFundsException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lab5.BankRobber">
+    <Position X="9.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAEAAgAAAAAAAARAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BankRobber.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="Lab5.TranType">
+    <Position X="4.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAgAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Tranzactie.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Lab5.Status">
+    <Position X="2.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAgAAAAAAAAAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>Tranzactie.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

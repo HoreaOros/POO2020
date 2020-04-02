@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{093E031F-FD69-4C58-BA36-791F33AED3AE}</ProjectGuid>
+    <ProjectGuid>{831A3C7C-0F85-4B2D-91F5-0E9F7587F8A2}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Lab5</RootNamespace>
-    <AssemblyName>Lab5</AssemblyName>
+    <RootNamespace>Curs6</RootNamespace>
+    <AssemblyName>Curs6</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,17 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BankRobber.cs" />
-    <Compile Include="ContBancar.cs" />
-    <Compile Include="InvalidAmountException.cs" />
-    <Compile Include="NotEnoughFundsException.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Tranzactie.cs" />
+    <Compile Include="Singleton.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
