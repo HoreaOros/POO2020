@@ -5,7 +5,7 @@ namespace Curs7
     {
         new public virtual string M()
         {
-            Console.WriteLine("B");
+            Console.WriteLine("C");
             return "C";
         }
     }
