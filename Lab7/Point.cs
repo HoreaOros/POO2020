@@ -17,5 +17,13 @@
         {
             return $"({X}, {Y})";
         }
+
+        public static Point randomPoint()
+        {
+            int x = Util.RND.Next(1, 50);
+            int y = Util.RND.Next(1, 50);
+
+            return new Point(x, y);
+        }
     }
 }
