@@ -10,5 +10,6 @@ namespace Lab7
     interface IGeometry
     {
         double Aria();
+        double Perimetru();
     }
 }

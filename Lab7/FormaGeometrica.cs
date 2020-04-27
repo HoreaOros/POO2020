@@ -22,6 +22,9 @@ namespace Lab7
 
 
         abstract public double Aria();
+        abstract public double Perimetru();
+
+       
         public void f() { }
     }
 }
