@@ -1,7 +1,7 @@
 ﻿using System;
 namespace Lab7
 {
-    internal class Dreptunghi : FormaGeometrica
+    public class Dreptunghi : FormaGeometrica
     {
         private int lungime, latime;
         

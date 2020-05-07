@@ -2,7 +2,7 @@
 namespace Lab7
 {
     //TODO: adaugarea unei metode Perimetru
-    internal abstract class FormaGeometrica: IGeometry
+    public abstract class FormaGeometrica: IGeometry
     {
         private Point position;
         private Guid guid;

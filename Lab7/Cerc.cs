@@ -6,7 +6,7 @@ namespace Lab7
     /// <summary>
     /// Clasa cerc
     /// </summary>
-    internal class Cerc : FormaGeometrica
+    public class Cerc : FormaGeometrica
     {
         public Cerc()
         {
