@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Lab7
 {
-    // TODO: refactorizarea generarii de numere aleatoare in asa fel incat sa avem un singur generator 
+    
     class Program
     {
         static void Main(string[] args)
@@ -52,6 +52,8 @@ namespace Lab7
                     Console.WriteLine(e.Message);
                 }
             }
+
+            Console.ReadKey();
         }
         static void f(FormaGeometrica fg)
         {

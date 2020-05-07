@@ -1,8 +1,8 @@
 ﻿using System;
 namespace Lab7
 {
-    //TODO: adaugarea unei metode Perimetru
-    public abstract class FormaGeometrica: IGeometry
+  
+    internal abstract class FormaGeometrica: IGeometry
     {
         private Point position;
         private Guid guid;
@@ -20,7 +20,7 @@ namespace Lab7
             return $"[{guid}, {position.ToString()}]";
         }
 
-
+        abstract public double Perimetru();
         abstract public double Aria();
         public void f() { }
     }
