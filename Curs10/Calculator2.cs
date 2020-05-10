@@ -34,6 +34,7 @@ namespace Curs10
             }
 
             op1 = int.Parse(tokens[0]); // poate sa genereze exceptie
+            
             operatie = tokens[1][0];
 
             switch (operatie)
