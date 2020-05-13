@@ -46,6 +46,7 @@
     <Compile Include="Add.cs" />
     <Compile Include="Calculator2.cs" />
     <Compile Include="Calculator1.cs" />
+    <Compile Include="CalculatorParser.cs" />
     <Compile Include="Divide.cs" />
     <Compile Include="ICalculator.cs" />
     <Compile Include="Multiply.cs" />
