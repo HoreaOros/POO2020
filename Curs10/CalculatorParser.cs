@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.NetworkInformation;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -8,14 +9,36 @@ namespace Curs10
 {
     class CalculatorParser
     {
-        private ICalculator c;
         private string expr;
-        public CalculatorParser(ICalculator c, string expr)
+        private int op1, op2;
+        private char operatie;
+        private ICalculator opCalc;
+
+        public ICalculator Operatie
         {
-            this.c = c;
-            this.expr = expr;
+            get { return opCalc; }
+            private set { opCalc = value; }
         }
-        public void Parse(out int op1, out int op2, out char operatie)
+
+        public int Op1
+        {
+            get
+            {
+                return op1;
+            }
+        }
+
+        public int Op2
+        {
+            get { return op1; }
+        }
+
+        public CalculatorParser(string expr)
+        {
+            this.expr = expr;
+            Parse();
+        }
+        private void Parse()
         {
             char[] sep = { ' ' };
             string[] tokens = expr.Split(sep, 3, StringSplitOptions.RemoveEmptyEntries);
@@ -31,26 +54,34 @@ namespace Curs10
             op1 = int.Parse(tokens[0]); // poate sa genereze exceptie
             operatie = tokens[1][0];
 
+
             switch (operatie)
             {
                 case '+':
-                    c = new Add();
+                    Operatie = new Add();
                     break;
                 case '-':
-                    c = new Subtract();
+                    Operatie = new Subtract();
                     break;
                 case '*':
-                    c = new Multiply();
+                    Operatie = new Multiply();
                     break;
                 case '/':
-                    c = new Divide();
+                    Operatie = new Divide();
                     break;
                 default:
                     break;
             }
 
-
             op2 = int.Parse(tokens[2]);
+        }
+
+
+
+        public void Parse(string exp)
+        {
+            this.expr = exp;
+            Parse();
         }
     }
 }

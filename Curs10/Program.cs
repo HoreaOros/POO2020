@@ -28,7 +28,9 @@ namespace Curs10
                         expr = Console.ReadLine();
                         try
                         {
-                            Calculator2 c = new Calculator2(expr);
+                            // TODO CalculatorParser trebuie transformat intr-un singleton
+                            CalculatorParser cp = new CalculatorParser(expr);
+                            Calculator2 c = new Calculator2(cp.Op1, cp.Op2, cp.Operatie);
                             c.Evaluate();
                             Console.WriteLine(c.Value);
                         }
