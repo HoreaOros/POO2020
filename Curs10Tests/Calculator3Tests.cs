@@ -18,20 +18,43 @@ namespace Curs10.Tests
         public void EvaluateTest()
         {
             // arrange
-            string expresie = "1 + 2";
+            string expresie = "1 ? 2";
             CalculatorParser cp = new CalculatorParser(expresie);
 
-            Operatie operatie;
+            Operatie operatie = null;
 
-            operatie = Operatii.Add;
 
+            /// instructiune switch care foloseste type pattern
+            /// valabil doar in C# v7.0 sau mai mare.
+            switch (cp.Operatie)
+            {
+                case Add op:
+                    operatie = Operatii.Add;
+                    break;
+                case Subtract op:
+                    operatie = Operatii.Subtract;
+                    break;
+                case Multiply op:
+                    operatie = Operatii.Multiply;
+                    break;
+                case Divide op:
+                    operatie = Operatii.Divide;
+                    break;
+                default:
+                    break;
+            }
+
+            if (operatie == null)
+            {
+                return;
+            }
             Calculator3 c3 = new Calculator3(cp.Op1, cp.Op2, operatie);
 
 
             // act 
             c3.Evaluate();
 
-            int expected = 3;
+            int expected = -1;
             int actual = c3.Value;
 
 
