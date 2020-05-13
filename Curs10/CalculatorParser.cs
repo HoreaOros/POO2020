@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Curs10
 {
-    class CalculatorParser
+    public class CalculatorParser
     {
         private string expr;
         private int op1, op2;
@@ -30,7 +30,7 @@ namespace Curs10
 
         public int Op2
         {
-            get { return op1; }
+            get { return op2; }
         }
 
         public CalculatorParser(string expr)

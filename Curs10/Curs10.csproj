@@ -44,12 +44,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Add.cs" />
+    <Compile Include="Calculator3.cs" />
     <Compile Include="Calculator2.cs" />
     <Compile Include="Calculator1.cs" />
     <Compile Include="CalculatorParser.cs" />
     <Compile Include="Divide.cs" />
     <Compile Include="ICalculator.cs" />
     <Compile Include="Multiply.cs" />
+    <Compile Include="Operatie.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Subtract.cs" />
