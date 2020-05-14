@@ -43,12 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MyStackInt.cs" />
-    <Compile Include="MyStackOfString.cs" />
+    <Compile Include="IStack.cs" />
+    <Compile Include="MyStack.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StackEmptyException.cs" />
     <Compile Include="StackFullException.cs" />
+    <Compile Include="SuperStack.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
