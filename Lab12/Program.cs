@@ -18,6 +18,8 @@ namespace Lab12
             Matrice m4 = new Matrice(3, 3);
             Matrice m5 = new Matrice(3, 3);
 
+         
+
             // initializare matrice
             m1.RandomInit(-20, 20);
             m2.RandomInit(-10, 10);
@@ -27,20 +29,19 @@ namespace Lab12
 
             // Operatii asupra matricilor
             Matrice m3 = m1 * m2;
-            
+            Matrice m7 = m4 + m5;
+            Matrice m8 = m4 - m5;
 
 
             // afisare matrice
             Console.WriteLine(m1);
             Console.WriteLine(m2);
             Console.WriteLine(m3);
-
-
-
+           
             Console.WriteLine(m4);
             Console.WriteLine(m5);
-
-
+            Console.WriteLine(m7);
+            Console.WriteLine(m8);
 
             if (m4 == m5)
             {
@@ -52,14 +53,11 @@ namespace Lab12
             }
 
 
-
-
-
             Matrice m6 = new Matrice(10, 10);
             m6.RandomInit(-50, 50);
 
 
-            Matrice m7 = (Matrice)m6.Clone();
+           // Matrice m7 = (Matrice)m6.Clone();
 
             if (m6 == m7)
             {

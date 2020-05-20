@@ -65,7 +65,29 @@ namespace Lab12
         // TODO: implementare <corecta> a metodei Equals
         public override bool Equals(object obj)
         {
-            return base.Equals(obj);
+            if(obj.GetType() != typeof(Matrice))
+            {
+                return false;
+            }
+
+            Matrice m2 = (Matrice)obj;
+            if(m2.coloane != this.coloane || m2.linii != this.linii)
+            {
+                return false;
+            }
+
+            for (int i = 0; i < Linii; i++)
+            {
+                for (int j = 0; j < Coloane; j++)
+                {
+                    if (m2[i, j] != this[i, j])
+                    {
+                        return false;
+                    }
+                }
+            }
+
+            return true;
         }
 
         public override int GetHashCode()
@@ -89,7 +111,34 @@ namespace Lab12
 
             return result;
         }
+        public static Matrice operator +(Matrice m1, Matrice m2)
+        {
+            Matrice result = new Matrice(m1.Linii, m2.Coloane);
 
+            for (int i = 0; i < m1.Linii; i++)
+            {
+                for (int j = 0; j < m2.Coloane; j++)
+                {
+                    int suma = m1[i, j] + m2[i, j];
+                    result[i, j]= suma;
+                }
+            }
+            return result;
+        }
+        public static Matrice operator - (Matrice m1, Matrice m2)
+        {
+            Matrice result = new Matrice(m1.Linii, m2.Coloane);
+
+            for (int i = 0; i < m1.Linii; i++)
+            {
+                for (int j = 0; j < m2.Coloane; j++)
+                {
+                    int diferenta = m1[i, j] - m2[i, j];
+                    result[i, j] = diferenta;
+                }
+            }
+            return result;
+        }
         public static Matrice operator*(Matrice m1, Matrice m2)
         {
             if (m1.Coloane != m2.Linii)
