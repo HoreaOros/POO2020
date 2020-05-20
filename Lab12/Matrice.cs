@@ -65,7 +65,29 @@ namespace Lab12
         // TODO: implementare <corecta> a metodei Equals
         public override bool Equals(object obj)
         {
-            return base.Equals(obj);
+            if(obj.GetType() != typeof(Matrice))
+            {
+                return false;
+            }
+
+            Matrice m2 = (Matrice)obj;
+            if(m2.coloane != this.coloane || m2.linii != this.linii)
+            {
+                return false;
+            }
+
+            for (int i = 0; i < Linii; i++)
+            {
+                for (int j = 0; j < Coloane; j++)
+                {
+                    if (m2[i, j] != this[i, j])
+                    {
+                        return false;
+                    }
+                }
+            }
+
+            return true;
         }
 
         public override int GetHashCode()

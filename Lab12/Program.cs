@@ -38,15 +38,10 @@ namespace Lab12
             Console.WriteLine(m2);
             Console.WriteLine(m3);
            
-
-
-
             Console.WriteLine(m4);
             Console.WriteLine(m5);
             Console.WriteLine(m7);
             Console.WriteLine(m8);
-
-
 
             if (m4 == m5)
             {
@@ -56,9 +51,6 @@ namespace Lab12
             {
                 Console.WriteLine("Matricile m4 si m5 nu sunt egale");
             }
-
-
-
 
 
             Matrice m6 = new Matrice(10, 10);
