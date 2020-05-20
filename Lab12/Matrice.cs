@@ -113,6 +113,10 @@ namespace Lab12
         }
         public static Matrice operator +(Matrice m1, Matrice m2)
         {
+            if(m1.Linii != m2.Linii || m1.Coloane != m2.Coloane)
+            {
+                throw new InvalidOperationException("Numarul de linii sau coloane ale celor doua matrici nu coincide!");
+            }
             Matrice result = new Matrice(m1.Linii, m2.Coloane);
 
             for (int i = 0; i < m1.Linii; i++)
@@ -127,6 +131,10 @@ namespace Lab12
         }
         public static Matrice operator - (Matrice m1, Matrice m2)
         {
+            if (m1.Linii != m2.Linii || m1.Coloane != m2.Coloane)
+            {
+                throw new InvalidOperationException("Numarul de linii sau coloane ale celor doua matrici nu coincide!");
+            }
             Matrice result = new Matrice(m1.Linii, m2.Coloane);
 
             for (int i = 0; i < m1.Linii; i++)
