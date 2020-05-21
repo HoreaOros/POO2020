@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2657088C-9EEB-4207-95D5-FE3EDE580592}</ProjectGuid>
+    <ProjectGuid>{946A93C1-AE96-4144-A536-DC9CB5567C07}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Curs10</RootNamespace>
-    <AssemblyName>Curs10</AssemblyName>
+    <RootNamespace>Lab12</RootNamespace>
+    <AssemblyName>Lab12</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,18 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Add.cs" />
-    <Compile Include="Calculator3.cs" />
-    <Compile Include="Calculator2.cs" />
-    <Compile Include="Calculator1.cs" />
-    <Compile Include="CalculatorParser.cs" />
-    <Compile Include="Divide.cs" />
-    <Compile Include="ICalculator.cs" />
-    <Compile Include="Multiply.cs" />
-    <Compile Include="Operatie.cs" />
+    <Compile Include="Matrice.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Subtract.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
