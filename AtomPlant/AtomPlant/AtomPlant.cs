@@ -35,10 +35,15 @@ namespace AtomPlant
                 if (n == 9 && Explosion != null)
                 {
                     Console.WriteLine("BANG!!!");
-                    Explosion(this, new MEventArgs(n));
+                    OnRaiseEvent(new MEventArgs(n)); 
                     break;
                 }
             }
+        }
+
+        protected virtual void OnRaiseEvent(MEventArgs e)
+        {
+            Explosion(this, e);
         }
     }
 }

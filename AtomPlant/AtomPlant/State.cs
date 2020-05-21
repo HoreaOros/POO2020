@@ -13,10 +13,11 @@ namespace AtomPlant
         {
             name = s;
             this.ap = ap;
-            this.ap.Explosion += new EventHandler<MEventArgs>(ap_Explosion);
+            this.ap.Explosion += handleExplosionEvent; 
         }
 
-        void ap_Explosion(object sender, MEventArgs e)
+        // event callback
+        void handleExplosionEvent(object sender, MEventArgs e)
         {
             Console.WriteLine("{0} received a notification of the explosion", name);
             Console.WriteLine("Core temperature: {0}", e.Temperature);
