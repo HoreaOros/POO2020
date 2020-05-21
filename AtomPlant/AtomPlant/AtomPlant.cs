@@ -32,10 +32,14 @@ namespace AtomPlant
                 n = r.Next(10);
                 Console.WriteLine("Core temperature is:{0}", n);
                 
-                if (n == 9 && Explosion != null)
+                if (n == 9)
                 {
                     Console.WriteLine("BANG!!!");
-                    Explosion(this, new MEventArgs(n));
+                    if (Explosion != null)
+                    {
+                        Explosion(this, new MEventArgs(n));
+                    }
+                    
                     break;
                 }
             }
