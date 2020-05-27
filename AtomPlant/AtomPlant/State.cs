@@ -5,6 +5,8 @@ using System.Text;
 
 namespace AtomPlant
 {
+    // TODO: modificare implementare pentru a fi conforma cu .NET Framework Guidelines
+    // https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/events/how-to-publish-events-that-conform-to-net-framework-guidelines
     class State
     {
         private string name;
