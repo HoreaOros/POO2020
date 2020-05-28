@@ -88,9 +88,16 @@ namespace Lab13
 
         // creeaza un string cu cheile arborelui in ordine crescatoare
         // TODO: trebuie implementat
-        private string Inorder2(TreeNode root)
+        private string Inorder2(TreeNode node)
         {
-            throw new NotImplementedException();
+            if (node == null)
+            {
+                return "";
+            }
+            else
+                return Inorder2(node.Left) 
+                    + string.Format("{0} - {1}\n", node.Key, node.Data) 
+                    + Inorder2(node.Right);
         }
 
         public void Inorder()

@@ -26,9 +26,9 @@ namespace Lab13
             else
                 Console.WriteLine("Key {0} not found", n);
 
-            b.Inorder();
+            //b.Inorder();
 
-            //Console.WriteLine(b);
+            Console.WriteLine(b);
         }
     }
 }
